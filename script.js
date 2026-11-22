@@ -610,7 +610,7 @@ document.querySelectorAll('.rev').forEach(e => obs.observe(e));
    con los nombres cancion1 / Cancion 1 / cancion 1 y las extensiones .mp3 .wav .m4a .ogg.
    Si no encuentra alguna, muestra un aviso en pantalla. */
 const audio = $('#musica'), btnM = $('#btnMusica');
-const CARPETAS = ['musica/', ''], EXTS = ['.mp3', '.wav', '.m4a', '.ogg', '.aac', '.opus', '.flac', '.mp4'];
+const CARPETAS = ['', 'musica/'], EXTS = ['.mp3', '.wav', '.m4a', '.ogg', '.aac', '.opus', '.flac', '.mp4'];
 let pista = '', sonando = true, aviso, faderT;
 
 function fade(a, hasta, ms = 1500){
