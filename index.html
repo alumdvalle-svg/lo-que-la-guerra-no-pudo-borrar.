@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lo que la guerra no pudo borrar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Lora:ital@0;1&display=swap" rel="stylesheet">
+<link rel="icon" type="image/jpeg" href="imagen1.jpg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="bloqueado">
+
+<!-- Capas de fondo (las crea script.js) -->
+<div id="fondos" aria-hidden="true"></div>
+<div id="particulas" aria-hidden="true"></div>
+<div id="vineta" aria-hidden="true"></div>
+
+<audio id="musica" loop preload="auto"></audio>
+<button id="btnMusica" class="oculto" aria-label="Pausar o reanudar la música">♪</button>
+
+<!-- Portada -->
+<section id="portada">
+  <p class="sub">Una historia sobre la memoria, la amistad y todo lo que permanece después de perderlo</p>
+  <h1>Lo que la guerra<br>no pudo borrar</h1>
+  <p class="sub2">y todo lo que sigue ahí</p>
+  <button id="btnComenzar">Comenzar la lectura</button>
+  <p class="aviso">Esta historia habla de guerra, pérdida y muerte. Se recomienda leer con calma y con auriculares.</p>
+</section>
+
+<main id="historia"></main>
+
+<!-- Cierre: calificación y reflexión -->
+<section id="cierre" class="oculto">
+  <div class="bloque-cierre">
+    <h2>¿Te gustó esta historia?</h2>
+    <div id="estrellas" role="radiogroup" aria-label="Calificación"></div>
+    <p id="msgEstrellas" class="nota"></p>
+  </div>
+
+  <div class="bloque-cierre">
+    <h2>Y tú, ¿serías capaz de seguir con tu vida después de vivir todo esto?</h2>
+    <p class="nota">Deja tu reflexión.</p>
+    <form id="formReflexion">
+      <input type="text" id="nombre" maxlength="40" placeholder="Tu nombre (opcional)">
+      <textarea id="texto" rows="6" maxlength="1200" placeholder="Escribe aquí lo que piensas…" required></textarea>
+      <button type="submit">Enviar reflexión</button>
+    </form>
+    <p id="msgReflexion" class="nota" role="status"></p>
+  </div>
+
+  <footer>
+    <p>Voces jóvenes contra la guerra</p>
+    <p class="nota">«Escuchar también es una forma de no olvidar».</p>
+  </footer>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
