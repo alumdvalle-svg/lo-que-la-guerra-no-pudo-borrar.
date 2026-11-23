@@ -119,10 +119,6 @@ Entré al comedor con una bandeja y busqué un lugar libre. Había varias person
 Al fondo vi a un chico sentado solo.
 Me acerqué con cierta inseguridad.
 —¿Me puedo sentar?
-Él levantó la mirada.
-—Ni pincho.
-No entendí si aquello era una respuesta o simplemente una forma extraña de hablar.
-Miré la silla.
 —Siéntate —añadió.
 Me senté frente a él.
 Comimos durante un rato sin decir nada. Yo no sabía qué preguntar y él tampoco parecía especialmente interesado en conversar.
@@ -709,3 +705,4 @@ $('#formReflexion').onsubmit = async e => {
   }
   btn.disabled = false;
 };
+
